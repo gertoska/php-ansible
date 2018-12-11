@@ -1,5 +1,5 @@
 ## Alpine PHP Dockerfile
-[![Docker Pulls](https://img.shields.io/docker/pulls/gertoska/alpine-php.svg)](https://hub.docker.com/r/gertoska/alpine-php/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/gertoska/php-ansible.svg)](https://hub.docker.com/r/gertoska/php-ansible/)
 
 This dockerfile extends from [Alpine image](https://hub.docker.com/_/alpine/). Intended for use in a CI environment.
 
