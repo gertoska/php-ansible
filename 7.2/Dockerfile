@@ -1,15 +1,15 @@
-FROM alpine:3.7
+FROM alpine:3.8
 
 # make sure you can use HTTPS
 RUN apk add --update ca-certificates
 
 # copy public key
-ADD https://php.codecasts.rocks/php-alpine.rsa.pub /etc/apk/keys/php-alpine.rsa.pub
+ADD https://dl.bintray.com/php-alpine/key/php-alpine.rsa.pub /etc/apk/keys/php-alpine.rsa.pub
 
 # add repositories
-RUN echo "http://dl-cdn.alpinelinux.org/alpine/v3.7/main" > /etc/apk/repositories && \
-    echo "http://dl-cdn.alpinelinux.org/alpine/v3.7/community" >> /etc/apk/repositories && \
-    echo "@php http://php.codecasts.rocks/v3.7/php-7.2" >> /etc/apk/repositories
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/v3.8/main" > /etc/apk/repositories && \
+    echo "http://dl-cdn.alpinelinux.org/alpine/v3.8/community" >> /etc/apk/repositories && \
+    echo "@php https://dl.bintray.com/php-alpine/v3.8/php-7.2" >> /etc/apk/repositories
 
 # remove cache and tmp files
 RUN rm -rf /var/cache/apk/* && \

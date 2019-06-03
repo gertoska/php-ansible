@@ -7,7 +7,7 @@ This dockerfile extends from [Alpine image](https://hub.docker.com/_/alpine/). I
 
 |    Tag     | Parent     |Image Layers
 |------------|------------|---------
-| [7.2](https://github.com/gertoska/php-ansible/blob/master/7.2/Dockerfile)        |   alpine:3.7   | [![](https://images.microbadger.com/badges/image/gertoska/php-ansible:7.2.svg)](https://microbadger.com/images/gertoska/php-ansible:7.2 "Get your own image badge on microbadger.com")
+| [7.2](https://github.com/gertoska/php-ansible/blob/master/7.2/Dockerfile)        |   alpine:3.8   | [![](https://images.microbadger.com/badges/image/gertoska/php-ansible:7.2.svg)](https://microbadger.com/images/gertoska/php-ansible:7.2 "Get your own image badge on microbadger.com")
 | [5.6](https://github.com/gertoska/php-ansible/blob/master/5.6/Dockerfile)        |   alpine:3.5   | [![](https://images.microbadger.com/badges/image/gertoska/php-ansible:5.6.svg)](https://microbadger.com/images/gertoska/php-ansible:5.6 "Get your own image badge on microbadger.com")
 
 #### Docker images contains:
@@ -54,6 +54,7 @@ This dockerfile extends from [Alpine image](https://hub.docker.com/_/alpine/). I
 
 * bash
 * curl
+* git
 * nodejs
 * npm
 * openssh
